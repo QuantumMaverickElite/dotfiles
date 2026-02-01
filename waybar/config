@@ -1,0 +1,53 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": 42,
+  "spacing": 6,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/clock"],
+  "modules-right": ["network", "pulseaudio", "bluetooth", "battery"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "persistent-workspaces": { "*": 10 }
+  },
+
+ "custom/clock": {
+  "interval": 1,
+  "return-type": "json",
+  "exec": "~/.config/waybar/scripts/vclock.sh",
+  "tooltip": false
+},
+
+
+
+  "network": {
+    "format-wifi": "󰤨\n{signalStrength}%",
+    "format-ethernet": "󰈀\nLAN",
+    "format-disconnected": "󰤭\n--",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "󰕾\n{volume}%",
+    "format-muted": "󰖁\nmuted",
+    "tooltip": false,
+    "scroll-step": 5
+  },
+
+  "bluetooth": {
+    "format": "󰂯\noff",
+    "format-connected": "󰂱\non",
+    "tooltip": true
+  },
+
+  "battery": {
+    "format": "{icon}\n{capacity}%",
+    "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+    "tooltip": false
+  }
+}
+
