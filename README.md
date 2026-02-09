@@ -12,3 +12,11 @@ Personal config backups (Hyprland / Waybar) for fast restore on new machines.
 cp -r waybar ~/.config/
 chmod +x ~/.config/waybar/scripts/vclock.sh
 pkill waybar && waybar &
+
+
+## Hyprland
+- `hypr/hyprland.conf`
+
+### Install
+```bash
+cp -r hypr ~/.config/
