@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal config backups (Hyprland / Waybar) for fast restore on new machines.
+Personal config backups (Hyprland / Waybar / Swappy) for fast restore on new machines.
 
 ## Waybar
 - `waybar/config`
@@ -16,7 +16,10 @@ pkill waybar && waybar &
 
 ## Hyprland
 - `hypr/hyprland.conf`
+- `hypr/hyprlock.conf`
+- `hypr/wallpapers/`
 
 ### Install
 ```bash
 cp -r hypr ~/.config/
+
