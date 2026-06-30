@@ -2,3 +2,7 @@
 *.save.*
 *.bak
 *~
+
+# local machine-private overrides
+zshrc.local
+hypr/local.conf

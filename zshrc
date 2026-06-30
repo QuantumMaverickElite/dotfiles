@@ -116,3 +116,6 @@ elif [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
 elif [ -f /usr/share/zsh/site-contrib/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
   source /usr/share/zsh/site-contrib/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
+
+# Local/private machine-specific aliases
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
