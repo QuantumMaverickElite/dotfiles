@@ -1,5 +1,5 @@
 * {
-  font-family: JetBrainsMono Nerd Font;
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 7 Free", "Font Awesome 7 Brands", "Noto Color Emoji", sans-serif;
   font-size: 11px;
   border: none;
   border-radius: 0;
@@ -44,8 +44,18 @@ window#waybar {
   color: #9ca3af;
 }
 
-#network { color: #60a5fa; }
-#pulseaudio { color: #a78bfa; }
-#bluetooth { color: #34d399; }
-#battery { color: #facc15; }
+#network {
+  color: #60a5fa;
+}
 
+#pulseaudio {
+  color: #a78bfa;
+}
+
+#bluetooth {
+  color: #34d399;
+}
+
+#battery {
+  color: #facc15;
+}
